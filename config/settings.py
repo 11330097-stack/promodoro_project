@@ -50,7 +50,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "promodoro_project.urls"
+ROOT_URLCONF = "pomodoro_project.urls"
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "promodoro_project.wsgi.application"
+WSGI_APPLICATION = "pomodoro_project.wsgi.application"
 
 
 # Database

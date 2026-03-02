@@ -17,7 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from timer import views  # 確保這裡導入的是你的 app 名稱
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),               # 這裡會對應到首頁
+    path('update/', views.update_count, name='update'), # 這是給 JavaScript 呼叫的 API
 ]
